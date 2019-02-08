@@ -27,7 +27,7 @@
 #$ -l s_vmem=20G
 
 # max number of cpus for each pipeline
-#  should be >= NUM_CONCURRENT_TASK x "atac.star" in input JSON file
+#  should be >= NUM_CONCURRENT_TASK x "mirna_seq_pipeline.star" in input JSON file
 #  since star is a bottlenecking task in the pipeline
 #  SGE has a parallel environment (PE).
 #  ask your admin to add a new PE named "shm"
@@ -58,4 +58,4 @@ NUM_CONCURRENT_TASK=2
 #  you can monitor your jobs with "squeue -u $USER"
 java -jar -Dconfig.file=backends/backend.conf -Dbackend.default=singularity \
 -Dbackend.providers.singularity.config.concurrent-job-limit=${NUM_CONCURRENT_TASK} \
-$HOME/cromwell-35.jar run atac.wdl -i ${INPUT} -o workflow_opts/singularity.json -m ${PIPELINE_METADATA}
+$HOME/cromwell-35.jar run mirna_seq_pipeline.wdl -i ${INPUT} -o workflow_opts/singularity.json -m ${PIPELINE_METADATA}
