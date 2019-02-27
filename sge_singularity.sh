@@ -32,12 +32,13 @@
 #  SGE has a parallel environment (PE).
 #  ask your admin to add a new PE named "shm"
 #  or use your cluster's own PE instead of "shm"
-#  2 means number of cpus per pipeline
+#  4 means number of cpus per pipeline
 #$ -pe openmp 4
 
 # load java module if it exists
 module load java || true
-
+# load singularity module
+module load singularity
 # use input JSON for a small test sample
 #  you make an input JSON for your own sample
 INPUT=
