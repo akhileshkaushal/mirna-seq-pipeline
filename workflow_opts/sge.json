@@ -1,6 +1,6 @@
 {
     "default_runtime_attributes" : {
-        "sge_pe" : "shm",
+        "sge_pe" : "openmp",
         "singularity_container" : "~/.singularity/mirna-seq-pipeline-template.simg"
     }
 }

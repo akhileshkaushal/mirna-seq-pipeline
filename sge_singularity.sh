@@ -38,10 +38,10 @@
 # load java module if it exists
 module load java || true
 # load singularity module
-module load singularity
+module load singularity/3.0.0
 # use input JSON for a small test sample
 #  you make an input JSON for your own sample
-INPUT=
+INPUT=test/test_workflow/test_workflow_input.json
 
 # If this pipeline fails, then use this metadata JSON file to resume a failed pipeline from where it left 
 # See details in /utils/resumer/README.md
