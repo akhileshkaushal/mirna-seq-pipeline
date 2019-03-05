@@ -1,6 +1,6 @@
 {
     "default_runtime_attributes" : {
         "singularity_container" : "~/.singularity/mirna-seq-pipeline_template.sif",
-        "singularity_bindpath" : "~/mirna-seq-pipeline/test_data/"
+        "singularity_bindpath" : "~/mirna-seq-pipeline/test_data,~/mirna-seq-pipeline"
     }
 }
