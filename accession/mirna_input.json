@@ -1,7 +1,7 @@
 {
     "accession.steps" : [
         {
-            "dcc_step_version" : "/analysis-steps/microrna-seq-trimming-alignment-quantification-step-v-1/",
+            "dcc_step_version" : "/analysis-step-versions/microrna-seq-trimming-alignment-quantification-step-v-1-1/",
             "dcc_step_run" : "microrna-seq-trimming-alignment-quantification-step-run-v1",
             "wdl_task_name" : "star",
             "wdl_files" : [
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "dcc_step_version" : "/analysis-steps/microrna-seq-signal-generation-step-v-1/",
+            "dcc_step_version" : "/analysis-step-versions/microrna-seq-trimming-alignment-quantification-step-v-1-1/",
             "dcc_step_run" : "microrna-seq-signal-generation-step-run-v1",
             "wdl_task_name" : "wigtobigwig",
             "wdl_files" : [
